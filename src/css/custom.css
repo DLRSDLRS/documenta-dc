@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=PT+Sans+Narrow&display=swap');@import "modules/notes.css";
+
+:root {
+  --ifm-color-primary: #204a87;
+  --ifm-color-primary-dark: #1d437a;
+  --ifm-color-primary-darker: #1b3f73;
+  --ifm-color-primary-darkest: #16345f;
+  --ifm-color-primary-light: #235195;
+  --ifm-color-primary-lighter: #25559b;
+  --ifm-color-primary-lightest: #2a60af; /*rgb(146, 224, 208);*/
+  --ifm-code-font-size: 90%; /*95%;*/
+  --ifm-font-family-base: 'PT Sans Narrow', sans-serif;
+}
+[data-theme='dark'] {
+  --ifm-color-primary: #ffbc58;
+  --ifm-color-primary-dark: #ffae36;
+  --ifm-color-primary-darker: #ffa725;
+  --ifm-color-primary-darkest: #f09000;
+  --ifm-color-primary-light: #ffca7a;
+  --ifm-color-primary-lighter: #ffd18b;
+  --ifm-color-primary-lightest: #ffe5bf;
+}
+.docusaurus-highlight-code-line {
+  background-color: rgb(123, 132, 159);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+table {
+    width: 100%;
+}
+
+.markdown li > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.ph.cmd {
+  font-family: revert;
+  background-color:  var(--ifm-pre-background);
+}
+
+.pre {
+  background-color: var(--ifm-pre-background);
+  border-radius: var(--ifm-pre-border-radius);
+  color: var(--ifm-pre-color);
+  font: var(--ifm-code-font-size)/var(--ifm-pre-line-height) var(--ifm-font-family-monospace);
+  margin: 0 0 var(--ifm-spacing-vertical);
+  overflow: auto;
+  padding: var(--ifm-pre-padding);
+  word-wrap: normal;
+  display: block;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.ph:not(.b):not(.i):not(.u) {
+    display: inline;
+    background-color: var(--ifm-pre-background);
+    border-radius: var(--ifm-pre-border-radius);
+    color: var(--ifm-pre-color);
+    font: var(--ifm-code-font-size)/var(--ifm-pre-line-height) var(--ifm-font-family-monospace);
+    word-wrap: normal;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+.markdown {
+    --ifm-h1-vertical-rhythm-top: 0; 
+}
+
+.anchor_top_offset::before {
+    top: calc(var(--ifm-navbar-height) * -1);
+    content: '';
+    display: block;
+    height: calc(var(--ifm-navbar-height));
+    margin-top: calc(var(--ifm-navbar-height) * -1);
+    visibility: hidden;
+}
+
+/* Wrap long lines of text in codeblocks */
+code {
+  white-space: pre-wrap;
+}
+
+
+
+  
+

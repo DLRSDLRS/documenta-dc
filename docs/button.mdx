@@ -1,0 +1,118 @@
+---
+title: button
+---
+
+import Highlight from '../src/components/FX/highlight';
+import Button from '../src/components/button/button';
+import RadioButtons from '../src/components/radioButtons/radioButtons';
+import CallToAction from '../src/components/button/callToAction';
+import IconButton from '../src/components/button/IconButton'
+
+# Button
+
+A <Highlight color="#25c2a0">Button</Highlight> is an interactive element that allows user to take actions.
+Clicking or tapping them results in a specific action that is( or at least it should be) described inside the button.
+
+## Button types
+
+In General, buttons can be grouped by button styles and button actions. Button styling refers only to how it looks - the sizing, color or a shadow.
+Button action refers to what action it performs. More importants buttons should stand out more so that they can be found easier.
+
+<Button />
+
+### CTA (Call-To-Action)
+
+
+
+A CTA Button is expected to call the user to perform some sction after clicking it. After clicking it, the user can expect that he will be asked to enter some sort of information.
+They should stand out and they are usually the biggest buttons.
+
+
+<br/>
+example made with Bootstrap
+
+```
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+```
+
+<CallToAction />
+
+#### Primary button
+
+Very similar in terms of design with the CTA buttons. However, the difference is in the action - Primary buttons just help the user use the product and perform
+an action for him.
+
+
+#### Secondary buttons
+
+They are an alternative for the Primary button. They can be buttons such as "Cancel" or "Save".
+These aren't actions we necessarily encourage the users to take, but they might still want to take it.
+Often appear inside of a form. They make it easier for the user to go back and edit some information for example.
+
+### Tertiary buttons
+
+Might not be clicked by every user. They are not a part of any specific process.
+
+## Button styles
+
+Give important information on how and when they shoulb be used.
+
+
+### Filled button
+
+A button filled with a solid color or a gradient.
+
+### Line button
+
+A button that doesn't have a fill - just an outline.
+
+### Text Link buttons
+
+Theay are simply parts of text that are styled to make them look clickable.
+
+### Icons inside buttons
+
+<IconButton />
+
+Using icons inside buttons makes them easier to "scan" and in result - understand. Icons can also be used for easily understandable actions.
+
+## Corner radio
+
+Adjusting the border radius of buttons can give it a different feel.
+
+## Button shadows
+
+Adding a subtle shadow to your button can make it stand out more.
+## Button states
+
+Apart from just the initial state, it should also be designed a hover, clicked and disabled states.
+It gives the user feedback for his actions.
+
+## Honorable mention - VIBs - Very important buttons
+
+A button that has a very high degree of importance.
+It should have a very clear context on what the action after clicking will be.
+
+
+##### Examples made with Bootstrap
+
+
+
+ RadioButtons
+
+ <RadioButtons />
+
+
+
+
+
+

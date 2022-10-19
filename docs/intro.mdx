@@ -1,0 +1,73 @@
+---
+title: Introduction
+---
+
+
+
+
+## Motivation
+
+Doc Cirrus should have a unified style across all products. This is currently not the case. The coarse example is our Sols that look different than the rest of the inSuite. This has been pointed out and commented in many sprint reviews. We have a theme with fonts and colors (Bootstrap@2 in inSuite, Boostrap@3 in Sols), but the components and their behaviour are not the same across similar contexts. I.e. the buttons of the same look, does not behave the same in similar contexts. This causes confusion for the user. According to the psychological halo effect this will cause the user to perceive our software as that of less quality. We want use the halo effect to our advantage.
+
+## Short term benefits
+
+Communication between PO/PM and dev is improved
+Same definition of style and user experience of PO/PM and dev
+
+## Longterm benefits
+
+- Easier for PM/PO to create mockups (connection between wireframes/mockups and DC components)
+- Clickable dummies can be created and presented to customers before development
+- better planning and allocation of resources
+
+## Component levels
+
+The guide needs to cover the following levels. List ist not exhaustive.
+
+### Low level (web/product design)
+
+- Color (dark- and light mode palette)
+- Font (sizes in REM)
+- Distance/size
+
+### Mid level (web/product design, UI design)
+
+- Buttons
+- Forms
+    - Input
+    - Selection box
+    - Containers
+    - Dialogs
+    - etc.
+
+### High level (user interaction, PM and UX designer)
+
+The business logic of a component as an experience from the user perspective. Depends on the first two levels.
+- Guide
+    - Define where and how the styling is done.
+    - Currently CSS from the same component is changed in class names, PUG files, JS and this is not how it should be done.
+    - Component library
+
+## How to document
+
+- Structure every component/document/markdown in the same fashion
+- Finding out a good structure is part of the epic
+- Include example of the use of components
+
+## Future related plans
+
+- Create storybook of style guide
+- Use storybook components in design tool
+- Each components has a documented API specific to our use case
+    - i.e. that specific buttons triggers or is triggered by that function in our codebase
+    - static code analysis
+
+## Chronological topics
+
+- List and document all frameworks
+- Pick one framework to use for documentation
+- Create components and write documentation (parallel)
+    - Create components
+    - Write documentation
+- Create example mockup from PM with user experience. How would PM use the new style guide and component library in their development cycle. Just a visual demo
+- Write down best practices and standards
